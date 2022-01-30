@@ -6,7 +6,7 @@ node_js:
 services: 
     - docker
 before_install: 
-    - docker build -t lkhlkh/sample-app .
+    - docker build -t lkhlkh/sample-app -f Dockerfile .
 script:
     - docker run --rm -p 80:80 --name react-app lkhlkh/sample-app
 
