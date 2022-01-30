@@ -13,7 +13,7 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-2"
-  app: "sample-docker-react"
+  app: "Sample-React"
   env: "Samplereact-env" ### Your EB App environment name
   bucket_name: "elasticbeanstalk-ap-southeast-2-681883041094"
   bucket_path: "EBApptest"
