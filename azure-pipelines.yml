@@ -19,3 +19,10 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure for Students(880b639c-50a3-44d1-a61b-46af94d37952)'
+    appType: 'webAppLinux'
+    WebAppName: 'demochaokai'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
