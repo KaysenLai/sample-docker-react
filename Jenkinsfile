@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'docker run -dp 3000:3000 docker-getting-started'
+                sh 'docker run -dp 3002:3000 docker-getting-started'
             }
         }
     }
